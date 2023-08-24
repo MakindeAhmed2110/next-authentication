@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+@font-face{
+  font-family: Space Grotesk;
+  src: url("../../public/font/SpaceGrotesk-Regular.ttf");
+}
+@font-face{
+  font-family: Space;
+  src: url('../../public/font/SpaceGrotesk-Bold.ttf')
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #101010;
+    color : #fff;
+    font-family: 'Space Grotesk', sans-serif;
+}
